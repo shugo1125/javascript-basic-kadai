@@ -1,13 +1,12 @@
 const Btn = document.getElementById('btn');
-const text2=document.getElementById('text2');
-text2.style.display = 'none';
- // HTML要素がクリックされたときにイベント処理を実行する
+const p= document.getElementsByClassName('parent');
  Btn.addEventListener('click', () => {
+
  
-   // 取得した文字列の文字数を出力する
-   const text=document.getElementById('text');
-   text.style.display = 'none';
+ const text= document.getElementById('text');
+ text.style.display='none'; 
 
-text2.style.display = 'block';
-
+   const text2 = document.createElement('h2');
+   text2.textContent = 'ボタンがクリックされました';ï
+   p.appendChild(text2);Ï
  });
