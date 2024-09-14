@@ -3,5 +3,7 @@ const text = document.getElementById('text');
 
 
 Btn.addEventListener('click', () => {
-  text.textContent = 'ボタンがクリックされました'; ï
+  setTimeout(() => {
+    text.textContent = 'ボタンがクリックされました'; ï
+  }, 2000);
 });
